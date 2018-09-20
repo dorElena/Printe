@@ -1,0 +1,192 @@
+.footer {
+    height: 159px;
+    background-color: $color-line;
+}
+
+.footer-conteiner {
+    padding: 20px 0;
+}
+
+.footer-logo {
+    @include flex ('');
+}
+
+.fotter-main {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.fotter-descr {
+    width: 261px;
+    font-size: 14px;
+}
+
+.footer-text {
+    margin-top: 10px;
+    margin-bottom: 44px;
+}
+
+.footer-nav {
+    width: 250px;
+}
+
+.footer-list {
+    margin-right: -135px;
+    columns: 180px 2;
+    
+}
+
+.footer-item {
+    margin-bottom: 28px;
+}
+
+.footer-item:nth-last-of-type(3n+1) {
+    margin-bottom: 0;
+}
+
+.footer-link {
+    font-size: 14px;
+    color: $color-font;
+    text-decoration: underline;
+}
+
+.footer-soc-phone {
+    @include flex ('f-e');
+    position: relative;
+    margin-top: 10px;
+}
+
+.footer-soc-icon {
+    width: 11px;
+    height: 20px;
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 21px;
+    margin-bottom: 20px;
+}
+
+.footer-phone-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 10px;
+}
+
+.footer-phone {
+    margin-right: 6px;
+}
+
+.footer-chevron {
+    position: relative;
+}
+
+.footer-chevron-link {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $color-white;
+    background-image: url(../img/fil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.footer-chevron:hover > .footer-phones {
+    display: block;
+}
+
+.footer-phones {
+    display: none;
+    width: 219px;
+    height: 167px;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    top: 40px;
+    right: -17px;
+    background: $color-white;
+    box-shadow: 0 -20px 50px 2px $color-line;
+}
+
+.footer-phones > li {
+    margin-bottom: 12px;
+}
+
+.footer-phones > li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-phones > li > a {
+    display: block;
+    line-height: 25px;
+    vertical-align: top;
+}
+
+.footer-vodafone-icon::before, .footer-kyivstar-icon::before, .footer-lifecell-icon::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 11px;
+}
+
+.footer-vodafone-icon::before {
+    background-image: url(../img/vodafone.jpg);
+}
+
+.footer-kyivstar-icon::before {
+    background-image: url(../img/kyivstar.jpg);
+}
+
+.footer-lifecell-icon::before {
+    background-image: url(../img/lifecell.jpg);
+}
+
+.footer-triangle-top:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -10px;
+    right: 14px;
+    transform: rotate(45deg);
+    z-index: 1;
+    background: $color-white;
+}
+
+.left {
+    display: inline-block;
+    text-align: right;
+    width: 206px;
+    margin-bottom: 33px;
+}
+
+.footer-site-devel {
+    text-transform: uppercase;
+    font-size: 11px;
+    width: 206px;
+    text-align: right;
+}
+
+.footer-site-devel::before {
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/glaynec.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 2px;
+    vertical-align: middle;
+}

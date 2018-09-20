@@ -1,0 +1,66 @@
+.production-tetle {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 29px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.production-list {
+    @include flex ('s-b');
+}
+
+.list-item {
+    flex: 0 0 32%;
+    width: 370px;
+    height: 291px;
+    border: 1px solid $color-line;
+    padding: 25px 29px;
+}
+
+.list-item > article {
+    display: inline-block;
+    width: calc(100% - 105px);
+    vertical-align: top;
+}
+
+.ofis-list > li, .business-list > li, .advertising-list > li {
+    line-height: 34px;
+}
+
+.ofis::before, .business::before, .advertising::before {
+    display: inline-block;
+    content: '';
+    width: 62px;
+    height: 62px;
+    margin-right: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.ofis::before {
+    background-image: url(../img/blank-page.jpg);
+}
+
+.business::before {
+    background-image: url(../img/road-map.jpg);
+}
+
+.advertising::before {
+    background-image: url(../img/e-reader.jpg);
+}
+
+h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+article > ul > li {
+    font-size: 14px;
+
+}
+
+.advertising-list {
+    column-count: 2;
+}

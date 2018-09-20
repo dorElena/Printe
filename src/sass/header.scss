@@ -1,0 +1,198 @@
+.header {
+    height: 106px;
+    box-shadow: 0 4px 0 $color-line;
+    margin-top: 15px;
+}
+
+.header-logo {
+    @include flex (' ');
+    width: 258px;
+    height: 77px;
+}
+
+.logo {
+    width: 67px;
+    height: 62px;
+    margin-right: 10px;
+}
+
+.logo-title {
+    text-transform: uppercase;
+    font-size: 48px;
+    color: $color-mint;
+}
+
+.logo-text {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.descr {
+    width: 375px;
+    text-align: center;
+}
+
+.descr-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 11px;
+}
+
+.client {
+    @include flex (' ');
+    margin-bottom: 22px;
+}
+
+.client-main {
+    font-size: 14px;
+    text-decoration: underline;
+    margin-right: 52px;
+}
+
+.client-main::before {
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 13px;
+    background-image: url(../img/user.jpg);
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.email-info {
+    font-size: 14px;
+    color: $color-font;
+    text-decoration: underline;
+}
+
+.soc-phone {
+    @include flex ('f-e');
+    position: relative;
+}
+
+.soc-icon {
+    width: 11px;
+    height: 20px;
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 21px;
+}
+
+.phone-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 10px;
+}
+
+.phone {
+    margin-right: 6px;
+}
+
+.chevron-link {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EDEDED;
+    background-image: url(../img/fil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.chevron:hover > .phones {
+    display: block;
+}
+
+.phones {
+    display: none;
+    width: 219px;
+    height: 167px;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    top: 60px;
+    right: -17px;
+    background: $color-white;
+    box-shadow: 0 -20px 50px 2px $color-line;
+}
+
+.phones > li {
+    margin-bottom: 12px;
+}
+
+.phones > li:last-child {
+    margin-bottom: 0;
+}
+
+.phones > li > a {
+    display: block;
+    line-height: 25px;
+    vertical-align: top;
+}
+
+.vodafone-icon::before, .kyivstar-icon::before, .lifecell-icon::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 11px;
+}
+
+.vodafone-icon::before {
+    background-image: url(../img/vodafone.jpg);
+}
+
+.kyivstar-icon::before {
+    background-image: url(../img/kyivstar.jpg);
+}
+
+.lifecell-icon::before {
+    background-image: url(../img/lifecell.jpg);
+}
+
+.triangle-top:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -10px;
+    right: 14px;
+    transform: rotate(45deg);
+    z-index: 1;
+    background: $color-white;
+}
+
+.shopping-cart {
+    width: 44px;
+    height: 44px;
+}
+
+.shopping-cart::after {
+    display: inline-block;
+    content: "3";
+    width: 30px;
+    height: 30px;
+    color: $color-white;
+    font-size: 14px;
+    background: $color-mint;
+    border-radius: 50%;
+    z-index: 1;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    top: -52px;
+    right: -26px;
+}
